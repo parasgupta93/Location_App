@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="iv_card_content_description_image">Image of the location response</string>
+    <string name="collasping_image">Collasping Image</string>
+
+</resources>

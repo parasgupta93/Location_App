@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.LocationDetailedActivity">
+
+    <ImageView
+        android:id="@+id/img_Header"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_back"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTitle"
+        android:textSize="@dimen/tv_card_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBack"
+        app:layout_constraintLeft_toRightOf="@id/imgBack"
+        app:layout_constraintRight_toRightOf="@+id/guidelineEnd"
+        app:layout_constraintTop_toTopOf="@+id/imgBack"
+        tools:text="Helld kkeklel" />
+
+    <TextView
+        android:id="@+id/tv_Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorDate"
+        android:textSize="@dimen/tv_card_text_size"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rectangle"
+        app:layout_constraintLeft_toRightOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/img_Header"
+        tools:text="12/May =-2019" />
+
+    <TextView
+        android:id="@+id/tv_Description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Date"
+        app:layout_constraintBottom_toTopOf="@id/tvBook"
+        tools:text="kajkjkjda kjkjdkjjkd jJJDLKJDA JDLLKDLKDA JKLLDALDSA JLKLDALKKLAD KAjdajadladldakl ladskldasklkldakl"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/priceContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvBook"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/priceContainer"
+            app:layout_constraintStart_toStartOf="@id/priceContainer"/>
+
+        <TextView
+            android:id="@+id/tvPriceTitle"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="#7C8495"
+            android:text="Price per person"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/priceContainer"
+            app:layout_constraintStart_toStartOf="@id/priceContainer"
+            app:layout_constraintBottom_toTopOf="@+id/tv_Price"
+            tools:text="Price per person" />
+
+        <TextView
+            android:id="@+id/tv_Price"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#4A4A4A"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvPriceTitle"
+            app:layout_constraintEnd_toEndOf="@id/priceContainer"
+            app:layout_constraintStart_toStartOf="@id/priceContainer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="kndwkre" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvBook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="60dp"
+        android:text="BOOK NOW"
+        android:background="#059176"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/priceContainer"
+        tools:text="lkfslkflk" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

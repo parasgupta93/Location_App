@@ -1,0 +1,65 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/card_layout_margin"
+    android:layout_marginLeft="@dimen/card_layout_margin"
+    android:layout_marginStart="@dimen/card_layout_margin"
+    android:layout_marginEnd="@dimen/card_layout_margin"
+    android:layout_marginRight="@dimen/card_layout_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    card_view:cardBackgroundColor="#FFFFFF"
+    card_view:cardCornerRadius="@dimen/card_layout_corner_radius"
+    card_view:cardElevation="@dimen/card_layout_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_card_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iv_card_height"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/iv_card_content_description_image"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_card_main_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tv_card_text_size"
+            android:layout_alignBottom="@id/img_card_main"
+            android:layout_margin="@dimen/tv_card_layout_margin"
+            android:text="title"
+            android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/img_card_main">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_card_main"
+            android:layout_margin="@dimen/tv_card_layout_margin"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:textColor="#059176"
+            android:textSize="@dimen/tv_card_text_size"
+            android:textStyle="bold"
+            android:background="@drawable/rectangle"
+            tools:text="HEADLINE TITLE" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

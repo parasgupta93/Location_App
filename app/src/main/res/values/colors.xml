@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorCustomer">#373C4A</color>
+    <color name="colorWelcome">#7C8495</color>
+    <color name="colorTitle">#474C57</color>
+    <color name="colorDate">#059176</color>
+
+</resources>

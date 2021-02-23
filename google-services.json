@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "517238841643",
+    "project_id": "roomandretrofit",
+    "storage_bucket": "roomandretrofit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:517238841643:android:331cdc33550b3f0996a56e",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "517238841643-9kdbt2duegrhmn6m9uha75u21oebae4o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFKRo4EitIuuiNIPFygR1jPGCIF0gdiQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "517238841643-9kdbt2duegrhmn6m9uha75u21oebae4o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
